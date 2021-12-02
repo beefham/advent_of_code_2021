@@ -75,7 +75,7 @@ Your puzzle answer was 1611.
 """
 
 def partOne():
-    file = open("day1input.txt", "r")
+    file = open("../day1input.txt", "r")
     previousNumber = math.inf
     currentNumber = 0
     count = 0
@@ -90,7 +90,7 @@ def partOne():
     file.close()
     
 def partTwo():
-    file = open("day1input.txt", "r")
+    file = open("../day1input.txt", "r")
     first = int(file.readline())
     second = int(file.readline())
     windowOne = math.inf
