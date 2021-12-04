@@ -1,7 +1,7 @@
 LENGTH_OF_LINE = 12
 
 def partOne():
-    file = open("../day3input.txt", 'r')
+    file = open("day3input.txt", 'r')
     lines = file.readlines()
     gamma = getGamma(lines)
     integerGamma = int(gamma, 2)
@@ -10,7 +10,7 @@ def partOne():
     file.close()
 
 def partTwo():
-    file = open("../day3input.txt", 'r')
+    file = open("day3input.txt", 'r')
     lines = file.readlines()
     oxygen = getOxygen(lines, 0)
     carbon = getCO2(lines, 0)

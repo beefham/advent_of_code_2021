@@ -30,15 +30,15 @@ The submarine has a bingo subsystem to help passengers (currently, you and the g
 
 After the first five numbers are drawn (7, 4, 9, 5, and 11), there are no winners, but the boards are marked as follows (shown here adjacent to each other to save space):
 
-![First round of drawing](firstround.png)
+![First round of drawing](/images/firstround.png)
 
 After the next six numbers are drawn (17, 23, 2, 0, 14, and 21), there are still no winners:
 
-![Second round of drawing](secondround.png)
+![Second round of drawing](/images/secondround.png)
 
 Finally, 24 is drawn:
 
-![After drawing 24](lastround.png)
+![After drawing 24](/images/lastround.png)
 
 At this point, the third board wins because it has at least one complete row or column of marked numbers (in this case, the entire top row is marked: 14 21 17 24 4).
 

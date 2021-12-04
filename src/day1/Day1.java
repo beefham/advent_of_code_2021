@@ -12,7 +12,7 @@ public class Day1 {
 
     public static void partOne() {
         try {
-            File file = new File("./src/day1input.txt");
+            File file = new File("day1input.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             int answer = br.lines()

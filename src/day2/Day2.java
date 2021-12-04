@@ -23,7 +23,7 @@ public class Day2 {
 
     private static void parseAndExecute(Submarine sub) {
         try {
-            File file = new File("./src/day2input.txt");
+            File file = new File("day2input.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             br.lines().map(str -> str.split(" ")).forEach((arr) -> {
@@ -42,7 +42,7 @@ public class Day2 {
 
     private static void parseAndExecutePartTwo(Submarine sub) {
         try {
-            File file = new File("./src/day2input.txt");
+            File file = new File("day2input.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             br.lines().map(str -> str.split(" ")).forEach((arr) -> {
