@@ -1,4 +1,4 @@
-#--- Day 2: Dive! ---
+# --- Day 2: Dive! ---
 
 Now, you need to figure out how to pilot this thing.
 
@@ -36,7 +36,7 @@ Your puzzle answer was **1936494**.
 ## --- Part Two ---
 Based on your calculations, the planned course doesn't seem to make any sense. You find the submarine manual and discover that the process is actually slightly more complicated.
 
-In addition to horizontal position and depth, you'll also need to track a third value, aim, which also starts at 0. The commands also mean something entirely different than you first thought:
+In addition to horizontal position and depth, you'll also need to track a third value, `aim`, which also starts at 0. The commands also mean something entirely different than you first thought:
 
 `down X` increases your aim by `X` units.
 `up X` decreases your aim by `X` units.
