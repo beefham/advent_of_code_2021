@@ -1,6 +1,3 @@
-import math
-
-"""
 --- Day 1: Sonar Sweep ---
 As the submarine drops below the surface of the ocean, it automatically performs a sonar sweep of the nearby sea floor. On a small screen, the sonar sweep report (your puzzle input) appears: each line is a measurement of the sea floor depth as the sweep looks further and further away from the submarine.
 
@@ -72,39 +69,3 @@ In this example, there are 5 sums that are larger than the previous sum.
 Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
 
 Your puzzle answer was 1611.
-"""
-
-def partOne():
-    file = open("../day1input.txt", "r")
-    previousNumber = math.inf
-    currentNumber = 0
-    count = 0
-    
-    for line in file:
-        currentNumber = int(line)
-        if (currentNumber > previousNumber):
-            count = count + 1
-        previousNumber = currentNumber
-    
-    print(count)
-    file.close()
-    
-def partTwo():
-    file = open("../day1input.txt", "r")
-    first = int(file.readline())
-    second = int(file.readline())
-    windowOne = math.inf
-    windowTwo = 0
-    count = 0
-    
-    for line in file:
-        third = int(line)
-        windowTwo = first + second + third
-        if (windowTwo > windowOne):
-            count = count + 1
-        first = second
-        second = third
-        windowOne = windowTwo
-        
-    print(count)
-    file.close()
