@@ -66,39 +66,41 @@ You can only use closing characters (`)`, `]`, `}`, or `>`), and you must add th
 
 In the example above, there are five incomplete lines:
 
-`[({(<(())[]>[[{[]{<()<>>` - Complete by adding `}}]])})]`.
-`[(()[<>])]({[<{<<[]>>(` - Complete by adding `)}>]})`.
-`(((({<>}<{<{<>}{[]{[]{}` - Complete by adding `}}>}>))))`.
-`{<[[]]>}<{[{[{[]{()[[[]` - Complete by adding `]]}}]}]}>`.
-`<{([{{}}[<[[[<>{}]]]>[]]` - Complete by adding `])}>`.
+`[({(<(())[]>[[{[]{<()<>>` - Complete by adding `}}]])})]`.<br>
+`[(()[<>])]({[<{<<[]>>(` - Complete by adding `)}>]})`.<br>
+`(((({<>}<{<{<>}{[]{[]{}` - Complete by adding `}}>}>))))`.<br>
+`{<[[]]>}<{[{[{[]{()[[[]` - Complete by adding `]]}}]}]}>`.<br>
+`<{([{{}}[<[[[<>{}]]]>[]]` - Complete by adding `])}>`.<br>
 
 Did you know that autocomplete tools also have contests? It's true! The score is determined by considering the completion string character-by-character. Start with a total score of 0. Then, for each character, multiply the total score by 5 and then increase the total score by the point value given for the character in the following table:
 
-`)`: `1` point.
-`]`: `2` points.
-`}`: `3` points.
-`>`: `4` points.
+`)`: `1` point.<br>
+`]`: `2` points.<br>
+`}`: `3` points.<br>
+`>`: `4` points.<br>
+
 So, the last completion string above - `])}>` - would be scored as follows:
 
-Start with a total score of `0`.
-Multiply the total score by 5 to get `0`, then add the value of `]` (2) to get a new total score of `2`.
-Multiply the total score by 5 to get `10`, then add the value of `)` (1) to get a new total score of `11`.
-Multiply the total score by 5 to get `55`, then add the value of `}` (3) to get a new total score of `58`.
-Multiply the total score by 5 to get `290`, then add the value of `>` (4) to get a new total score of `294`.
+- Start with a total score of `0`.
+- Multiply the total score by 5 to get `0`, then add the value of `]` (2) to get a new total score of `2`.
+- Multiply the total score by 5 to get `10`, then add the value of `)` (1) to get a new total score of `11`.
+- Multiply the total score by 5 to get `55`, then add the value of `}` (3) to get a new total score of `58`.
+- Multiply the total score by 5 to get `290`, then add the value of `>` (4) to get a new total score of `294`.
+
 The five lines' completion strings have total scores as follows:
 
-`}}]])})]` - `288957` total points.
-`)}>]})` - `5566` total points.
-`}}>}>))))` - `1480781` total points.
-`]]}}]}]}>` - `995444` total points.
-`])}>` - `294` total points.
+`}}]])})]` - `288957` total points.<br>
+`)}>]})` - `5566` total points.<br>
+`}}>}>))))` - `1480781` total points.<br>
+`]]}}]}]}>` - `995444` total points.<br>
+`])}>` - `294` total points.<br>
 
 Autocomplete tools are an odd bunch: the winner is found by sorting all of the scores and then taking the middle score. (There will always be an odd number of scores to consider.) In this example, the middle score is `288957` because there are the same number of scores smaller and larger than it.
 
 Find the completion string for each incomplete line, score the completion strings, and sort the scores. What is the middle score?
 
-Your puzzle answer was 
+Your puzzle answer was
 <details>
-  <summary>Answer</summary>
-  **4329504793**
-</details>.
+  <summary>Click to reveal answer</summary>
+  4329504793
+</details>
