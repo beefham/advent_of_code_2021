@@ -54,7 +54,11 @@ In the above example, an illegal `)` was found twice (2*3 = 6 points), an illega
 
 Find the first illegal character in each corrupted line of the navigation subsystem. What is the total syntax error score for those errors?
 
-Your puzzle answer was **358737**.
+Your puzzle answer was 
+<details>
+  <summary>Click to reveal answer</summary>
+  358737
+</details>
 
 ## --- Part Two ---
 
