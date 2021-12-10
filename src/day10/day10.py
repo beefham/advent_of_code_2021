@@ -51,9 +51,8 @@ class Stack():
             remaining += self.stack.pop()
         return remaining
 
+
 # Part one functions
-
-
 def syntax_check(line: str, stack: Stack) -> int:
     # count = 0
     for char in line:
